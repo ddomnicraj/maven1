@@ -4,6 +4,6 @@ node{
   }
   stage{ 'compile the source codes' }{
     def defaultmaven = tool name: 'defaultmaven', type: 'maven'
-    sh 'mvn package'
+    sh "${defaultmaven}/bin/mvn package"
   }  
 }
